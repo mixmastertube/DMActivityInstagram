@@ -10,6 +10,13 @@
 
 @implementation DMActivityInstagram
 
++ (UIActivityCategory)activityCategory
+{
+    return UIActivityCategoryShare;
+}
+
+- (UIImage *)_activityImage {}
+
 - (NSString *)activityType {
     return @"UIActivityTypePostToInstagram";
 }
